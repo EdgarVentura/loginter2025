@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Logistica - Shipping Company Website Template</title>
+    <title>LOGINTER Guatemala</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -44,18 +44,25 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-body navbar-light shadow border-top border-5 border-primary sticky-top p-0">
         <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
-            <h2 class="mb-2 text-white">LOGINTER</h2>
+            <h2 class="mb-2 text-white" data-i18n="title2"></h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                <a href="service.html" class="nav-item nav-link">Servicios</a>
-                <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                <a href="index.html" class="nav-item nav-link active" data-i18n="home">Inicio</a>
+                <a href="service.html" class="nav-item nav-link" data-i18n="services">Servicios</a>
+                <a href="contact.html" class="nav-item nav-link" data-i18n="contact">Contacto</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><spam class="fa fa-globe"></spam><label data-i18n="language"></label></a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="" class="dropdown-item" onclick="changeLanguage('es')">ES (Español)</a>
+                        <a href="" class="dropdown-item" onclick="changeLanguage('en')">EN (English)</a>
+                    </div>
+                </div>
             </div>
-            <h4 class="m-0 pe-lg-5 d-none d-lg-block"><i class="fa fa-headphones text-primary me-3"></i>+502 5699 1929</h4>
+            <h4 class="m-0 pe-lg-5 d-none d-lg-block"><i class="fa fa-headphones text-primary me-3"></i data-i18n="phone-primary"></h4>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -70,11 +77,11 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Logistica Local e Internacional</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Alta <span class="text-primary">Experiencia</span> Precios Competitivos</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Integramos toda la cadena de suministro en un unico lugar.</p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Leer Mas</a>
-                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Cotizar</a>
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown" data-i18n="info1"></h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4"><label data-i18n="info2"></label><span class="text-primary"><label data-i18n="experience">Experiencia</label></span><label data-i18n="good-price">Precios Competitivos</label> </h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2" data-i18n="info3"></p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" data-i18n="read-more"></a>
+                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight" data-i18n="quote"></a>
                             </div>
                         </div>
                     </div>
@@ -86,11 +93,11 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Logistica Local e Internacional</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Alta <span class="text-primary">Experiencia</span> Precios Competitivos</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Integramos toda la cadena de suministro en un unico lugar.</p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Leer Mas</a>
-                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Cotizar</a>
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown" data-i18n="info1"></h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4"><label data-i18n="info2"></label><span class="text-primary"><label data-i18n="experience">Experiencia</label></span><label data-i18n="good-price">Precios Competitivos</label> </h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2" data-i18n="info3"></p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" data-i18n="read-more"></a>
+                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight" data-i18n="quote"></a>
                             </div>
                         </div>
                     </div>
@@ -111,25 +118,24 @@
                     </div>
                 </div>
                 <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="text-secondary text-uppercase mb-3">SOBRE NOSOTROS</h6>
-                    <h1 class="mb-5">¿Por que Elegir LOGINTER?</h1>
-                    <li>
-                        <ul>Porque somos una agencia con alta experiencia en logistica local e internacional</ul>
-                        <ul>Porque nuestro personal esta altamente capacitado para brindar soluciones en logistica</ul>
-                        <ul>Porque integramos toda la cadena de suministro en un unico lugar</ul>
-                        <ul>Porque brindamos precios altamente competitivos</ul>
-                        <ul>Porque tambien le podemos brindamos productos, como materia prima</ul>
+                    <h6 class="text-secondary text-uppercase mb-3"><label data-i18n="about-us"></label></h6>
+                    <h1 class="mb-5"><label data-i18n="why-us"></label></h1>
+                    <li class="list-group">
+                        <ul><span class="fa fa-check"></span><label data-i18n="why-us-01"></label></ul>
+                        <ul><span class="fa fa-check"></span><label data-i18n="why-us-02"></label></ul>
+                        <ul><span class="fa fa-check"></span><label data-i18n="why-us-03"></label></ul>
+                        <ul><span class="fa fa-check"></span><label data-i18n="why-us-04"></label></ul>
+                        <ul><span class="fa fa-check"></span><label data-i18n="why-us-05"></label></ul>
                     </li>
                     <div class="row g-4 mb-5">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Logistica Internacionar</h5>
+                            <h5><label data-i18n="international-logistic"></label></h5>
                             
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                             <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>Entregas en tiempo</h5>
-                            
+                            <h5><label data-i18n="delivery-on-time"></label></h5>
                         </div>
                     </div>
                     <a href="" class="btn btn-primary py-3 px-5">Ver Mas</a>
@@ -144,8 +150,8 @@
     <div class="container-xxl py-5">
         <div class="container py-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-secondary text-uppercase">Nuestros Servicios</h6>
-                <h1 class="mb-5">Conosca Nuestros Servicios</h1>
+                <h6 class="text-secondary text-uppercase"><label data-i18n="our-services"></label></h6>
+                <h1 class="mb-5"><label data-i18n="you-know-our-service"></label></h1>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
@@ -153,9 +159,9 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-1.jpg" alt="">
                         </div>
-                        <h4 class="mb-3">Carga aerea y courier</h4>
-                        <p>Importacion de carga aerea y courier</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Leer Mas</span></a>
+                        <h4 class="mb-3"><label data-i18n="service-01"></label></h4>
+                        <p data-i18n="service-01-det"></p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span data-i18n="read-more"></span></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
@@ -163,9 +169,9 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-2.jpg" alt="">
                         </div>
-                        <h4 class="mb-3">Servicio de aduana</h4>
-                        <p>Servicio de aduana.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Leer Mas</span></a>
+                        <h4 class="mb-3"><label data-i18n="service-02"></label></h4>
+                        <p data-i18n="service-02-det"></p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span data-i18n="read-more"></span></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
@@ -173,9 +179,9 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-3.jpg" alt="">
                         </div>
-                        <h4 class="mb-3">Importación y Exportacón</h4>
-                        <p>Importacion y exportacion de contenedores completos y carga consolidada.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Leer Mas</span></a>
+                        <h4 class="mb-3"><label data-i18n="service-03"></label></h4>
+                        <p data-i18n="service-03-det"></p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span data-i18n="read-more"></span></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
@@ -183,9 +189,9 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-4.jpg" alt="">
                         </div>
-                        <h4 class="mb-3">Transporte</h4>
-                        <p>Transporte local de contenedores y carga consolidada</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Leer Mas</span></a>
+                        <h4 class="mb-3"><label data-i18n="service-04"></label></h4>
+                        <p data-i18n="service-04-det"></p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span data-i18n="read-more"></span></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
@@ -193,9 +199,9 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-5.jpg" alt="">
                         </div>
-                        <h4 class="mb-3">Venta de Productos</h4>
-                        <p>Venta de productos al por mayor y menor de China o Estados Unidos.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Leer Mas</span></a>
+                        <h4 class="mb-3"><label data-i18n="service-05"></label></h4>
+                        <p data-i18n="service-05-det"></p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span data-i18n="read-more"></span></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
@@ -203,9 +209,9 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-6.jpg" alt="">
                         </div>
-                        <h4 class="mb-3">Auditoria</h4>
-                        <p>Auditoria de proveedores en el pais de origen</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Leer Mas</span></a>
+                        <h4 class="mb-3"><label data-i18n="service-06"></label></h4>
+                        <p data-i18n="service-06-det"></p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span data-i18n="read-more"></span></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
@@ -213,9 +219,9 @@
                         <div class="overflow-hidden mb-4">
                             <img class="img-fluid" src="img/service-6.jpg" alt="">
                         </div>
-                        <h4 class="mb-3">Seguro de mercaderia</h4>
-                        <p>Seguro de mercaderia</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Leer Mas</span></a>
+                        <h4 class="mb-3"><label data-i18n="service-07"></label></h4>
+                        <p data-i18n="service-07-det"></p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span data-i18n="read-more"></span></a>
                     </div>
                 </div>
             </div>
@@ -229,20 +235,20 @@
         <div class="container feature py-5 px-lg-0">
             <div class="row g-5 mx-lg-0">
                 <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase mb-3">Sobre Nosotros</h6>
-                    <h1 class="mb-5">Conozca mas sobre LOGINTER</h1>
+                    <h6 class="text-secondary text-uppercase mb-3"><label data-i18n="about-us"></label></h6>
+                    <h1 class="mb-5"><label data-i18n="know-more-us"></label></h1>
                     <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
-                        <i class="fa fa-globe text-primary fa-3x flex-shrink-0"></i>
+                        <i class="fa fa-university text-primary fa-3x flex-shrink-0"></i>
                         <div class="ms-4">
-                            <h5>Mision</h5>
-                            <p class="mb-0">Somos una agencia de logistica que brinda soluciones en la cadena de suministro a sus clientes, a travez de nuestro valioso recurso humano.</p>
+                            <h5 data-i18n="mision-us"></h5>
+                            <p class="mb-0"><label data-i18n="mision-us-det"></label></p>
                         </div>
                     </div>
                     <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
-                        <i class="fa fa-globe text-primary fa-3x flex-shrink-0"></i>
+                        <i class="fa fa-university text-primary fa-3x flex-shrink-0"></i>
                         <div class="ms-4">
-                            <h5>Vision</h5>
-                            <p class="mb-0">Ser empresa lider en cadena de suministro, llevando a nuestros clientes al comercio internacional, siendo el enlace de comercio para la micro y macro empresa.</p>
+                            <h5 data-i18n="vision-us"></h5>
+                            <p class="mb-0"><label data-i18n="vision-us-det"></label></p>
                         </div>
                     </div>
                 </div>
@@ -261,14 +267,14 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase mb-3">Get A Quote</h6>
-                    <h1 class="mb-5">Solicite su cotización!</h1>
-                    <p class="mb-5">Contactenos para solicitar una cotización o consultar mas sobre nuestros servicios</p>
+                    <h6 class="text-secondary text-uppercase mb-3"><label data-i18n="quote"></label></h6>
+                    <h1 class="mb-5"><label data-i18n="get-a-quote"></label></h1>
+                    <p class="mb-5"><label data-i18n="quote-info"></label></p>
                     <div class="d-flex align-items-center">
                         <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
                         <div class="ps-4">
-                            <h6>LLame para cualquier consulta!</h6>
-                            <h3 class="text-primary m-0">+502 5699 1929</h3>
+                            <h6 data-i18n="call-a-query"></h6>
+                            <h3 class="text-primary m-0"><label data-i18n="phone-primary"></label></h3>
                         </div>
                     </div>
                 </div>
@@ -277,28 +283,29 @@
                         <form>
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Su nombre" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" data-i18n="placeholder_name" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Correo Electronico" style="height: 55px;">
+                                    <input type="email" class="form-control border-0" data-i18n="placeholder_email" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Número de Telefono" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" data-i18n="placeholder_phone" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Seleccione un servicio</option>
-                                        <option value="1">Servicio de Aduana</option>
-                                        <option value="2">Importación y Courier</option>
-                                        <option value="3">Transporte Local</option>
-                                        <option value="3">Otros Servicios</option>
+                                        <option selected data-i18n="select-a-item"></option>
+                                        <option value="1" data-i18n="service-01"></option>
+                                        <option value="2" data-i18n="service-02"></option>
+                                        <option value="3" data-i18n="service-03"></option>
+                                        <option value="4" data-i18n="service-04"></option>
+                                        <option value="5" data-i18n="service-05"></option>
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Special Note"></textarea>
+                                    <textarea class="form-control border-0" data-i18n="placeholder_special-note"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Solicitar Cotización</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit"><span data-i18n="get-a-quote"></span></button>
                                 </div>
                             </div>
                         </form>
@@ -315,9 +322,9 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>9A Calle, Avenida Reforma Zona 9, Edificio Galerias Reforma, 2do nivel, oficina 00, Guatemala, Guatemala</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+502 5699 1929</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@loginter.gt</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i><label data-i18n="address-primary"></p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><label data-i18n="phone-primary"></label></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><label data-i18n="email-primary"></p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -326,21 +333,21 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Servicios</h4>
-                    <a class="btn btn-link" href="">Carga Aerea y Courier</a>
-                    <a class="btn btn-link" href="">Servicio de Aduana</a>
-                    <a class="btn btn-link" href="">Importación y Exportación</a>
-                    <a class="btn btn-link" href="">Transporte</a>
-                    <a class="btn btn-link" href="">Venta de Productos</a>
-                    <a class="btn btn-link" href="">Auditoria</a>
-                    <a class="btn btn-link" href="">Seguro de Mercaderia</a>
+                    <h4 class="text-light mb-4"><label data-i18n="services"></label></h4>
+                    <a class="btn btn-link" href=""><label data-i18n="service-01"></label></a>
+                    <a class="btn btn-link" href=""><label data-i18n="service-02"></label></a>
+                    <a class="btn btn-link" href=""><label data-i18n="service-03"></label></a>
+                    <a class="btn btn-link" href=""><label data-i18n="service-04"></label></a>
+                    <a class="btn btn-link" href=""><label data-i18n="service-05"></label></a>
+                    <a class="btn btn-link" href=""><label data-i18n="service-06"></label></a>
+                    <a class="btn btn-link" href=""><label data-i18n="service-07"></label></a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Enlases Rapidos</h4>
-                    <a class="btn btn-link" href="">Sobre Nosotros</a>
-                    <a class="btn btn-link" href="">Contactenos</a>
-                    <a class="btn btn-link" href="">Nuestros Servicios</a>
-                    <a class="btn btn-link" href="">Soporte</a>
+                    <h4 class="text-light mb-4"><label data-i18n="quick-link"></label></h4>
+                    <a class="btn btn-link" href=""><label data-i18n="about-us"></label></a>
+                    <a class="btn btn-link" href=""><label data-i18n="contact-us"></label></a>
+                    <a class="btn btn-link" href=""><label data-i18n="our-services"></label></a>
+                    <a class="btn btn-link" href=""><label data-i18n="support"></label></a>
                 </div>
                 
             </div>
@@ -349,7 +356,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">LOGINTER</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#"><label data-i18n="title2"></label></a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
@@ -377,6 +384,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

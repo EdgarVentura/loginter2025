@@ -15,7 +15,8 @@ function updateContent(langData) {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.getAttribute("data-i18n");
 
-    if (element.tagName === "INPUT" && key === "placeholder_text") {
+    //if (element.tagName === "INPUT" && key === "placeholder_text") {
+    if (element.tagName === "INPUT" && key.includes("placeholder_")) {
       // If the element is an input with placeholder_text attribute, set placeholder
       element.placeholder = langData[key];
     } else {
